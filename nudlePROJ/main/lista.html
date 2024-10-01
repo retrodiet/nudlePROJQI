@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Presentes</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a hrperfil.html">Perfil</a></li>
+            </ul>ef="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="
+        </nav>
+    </header>
+
+    <div class="container">
+        <h3>Criar Lista de Presentes</h3>
+        <form id="present-form">
+            <div class="input-group">
+                <label for="nome">Nome do Presente:</label>
+                <input type="text" id="nome" required>
+            </div>
+            <div class="input-group">
+                <label for="valor">Valor:</label>
+                <input type="text" id="valor" required>
+            </div>
+            <div class="input-group">
+                <label for="imagem">Carregar Imagem:</label>
+                <input type="file" id="imagem" accept="image/*">
+            </div>
+            <div class="input-group">
+                <label for="link">Link para Comprar:</label>
+                <input type="url" id="link" required>
+            </div>
+            <button type="submit">Adicionar Presente</button>
+        </form>
+
+        <div class="input-group">
+            <label for="nome-da-lista">Nome da Lista:</label>
+            <input type="text" id="nome-da-lista">
+            <button id="adicionar-nome-da-lista">Adicionar Nome da Lista</button>
+        </div>
+
+        <!-- Nome da lista será exibido aqui -->
+        <h4 id="titulo-da-lista" style="display: none;"></h4>
+
+        <ul id="presentes-list"></ul>
+
+        <!-- Seção de escolha de cor da lista, inicialmente oculta -->
+        <div id="cor-da-lista-container" style="display: none;">
+            <h4>Alterar a cor da lista</h4>
+            <select id="cor-da-lista">
+                <option value="vermelho">Vermelho</option>
+                <option value="azul">Azul</option>
+                <option value="preto">Preto</option>
+                <option value="rosa">Rosa</option>
+                <option value="verde">Verde</option>
+            </select>
+            <button id="alterar-cor">Alterar Cor</button>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
